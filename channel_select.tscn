@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://c37yub63oic0l"]
+
+[ext_resource type="Script" uid="uid://do68g6gg1bfae" path="res://channel_select.gd" id="1_tgf4v"]
+
+[node name="ChannelSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_tgf4v")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+text = "Channel to read:"
+
+[node name="OptionButton" type="OptionButton" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+flat = true
+selected = 0
+item_count = 4
+popup/item_0/text = "R"
+popup/item_0/id = 0
+popup/item_1/text = "G"
+popup/item_1/id = 1
+popup/item_2/text = "B"
+popup/item_2/id = 2
+popup/item_3/text = "A"
+popup/item_3/id = 3
