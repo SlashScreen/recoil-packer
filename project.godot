@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="recoil_packer"
+config/name="Recoil Packer"
+config/description="Texture packer for Recoil engine "
 run/main_scene="uid://o2dlkmafi2p5"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"

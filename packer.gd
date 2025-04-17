@@ -3,6 +3,11 @@ extends Control
 
 const TextureLoad = preload("uid://dixiam2t4hm1r")
 const ChannelSelect = preload("uid://do68g6gg1bfae")
+const COLOR_SUFFIX := "_color"
+const TEAM_SUFFIX := "_team"
+const EMISSION_SUFFIX := "_emission"
+const SPECULAR_SUFFIX := "_specular"
+const ALPHA_SUFFIX := "_alpha"
 
 @onready var file_dialog: FileDialog = $FileDialog
 
